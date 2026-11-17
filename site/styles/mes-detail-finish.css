@@ -113,3 +113,5 @@
 .mes-page #builder .mes-hero-app.mes-sidebar-collapsed aside>.mes-app-brand>b{display:none!important}
 .mes-page #builder .mes-hero-app.mes-sidebar-collapsed aside>.mes-app-brand{width:44px;justify-content:center;gap:0}
 .mes-page #builder .mes-hero-app.mes-sidebar-collapsed .mes-sidebar-collapse{display:grid!important;margin:0!important;flex:0 0 28px;width:28px;height:28px;position:relative;z-index:2}
+/* Tablet hero breathing room below the fixed navigation. */
+@media(min-width:810px) and (max-width:1439px){.mes-page #builder{padding-top:144px!important}}
