@@ -1,0 +1,70 @@
+import { t as e } from "./rolldown-runtime.Bi-D_2cA.mjs?v=20261116-migration-v2";
+var t, n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y;
+function b() {
+  return (b = e(() => {
+    ((t = `Tier0 支持哪些工业协议？`),
+      (n = `Tier0 支持主流工业互联场景，涵盖 OPC UA、MQTT、Modbus、Siemens S7、Rockwell / Allen-Bradley EtherNet/IP、Omron FINS、Beckhoff ADS、BACnet，以及 API、数据库和文件等通信方式。同时，系统支持根据实际项目需求灵活扩展连接能力。`),
+      (r = `Tier0 支持从哪些设备与系统采集数据？`),
+      (i = `典型数据采集对象涵盖 PLC、生产设备、传感器、工业网关、OPC 服务器，以及 MES、WMS、ERP、时序数据库、关系型数据库、REST API、本地文件与第三方应用程序。`),
+      (a = `数据在发布前是否支持转换？`),
+      (o = `支持。数据在发布至 Tier 0 前，可预先进行过滤、映射、标准化、上下文增强，并依据预设规则进行转发。`),
+      (s = `系统是否支持实时数据流传输？`),
+      (c = `支持。Tier0 具备对工业流数据及运营数据进行实时采集与转发的能力。`),
+      (l = `是否仅支持 OT 数据？`),
+      (u = `并非如此。Tier0 全面支持 OT 与 IT 数据采集，不仅可接入设备信号、业务交易、生产订单和库存数据，还支持通过 API 集成各类系统数据。`),
+      (d = `数据采集与统一命名空间（UNS）有何区别？`),
+      (f = `数据采集负责设备连接与数据接入；统一命名空间（UNS）则将数据统一组织为标准化共享结构并对外开放，赋能多场景高效复用。`),
+      (p = `如何配置数据采集？`),
+      (m = `数据采集通常基于流程编辑器进行配置。工程师可按需编排数据源接入、数据转换、转发及发布等节点；配置完成后部署该流程，即可开展数据采集。`),
+      (h = `同一数据流是否支持跨项目复用？`),
+      (g = `支持。标准化数据流模式可在不同应用、产线、仓库及工厂站点间高效复用。`),
+      (_ = `是否需要编写代码？`),
+      (v = `并非必须。多数集成支持免代码的图形化流程配置，不仅能加快上线部署，也更便于后期的统一运维。`),
+      (y = {
+        exports: {
+          v0: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v2: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v8: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v6: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v1: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v13: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v10: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v14: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v17: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v11: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v7: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v4: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v9: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v3: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v16: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v5: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v15: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          v12: { type: `variable`, annotations: { framerContractVersion: `1` } },
+          __FramerMetadata__: { type: `variable` },
+        },
+      }));
+  }))();
+}
+b();
+export {
+  y as __FramerMetadata__,
+  t as v0,
+  n as v1,
+  d as v10,
+  f as v11,
+  p as v12,
+  m as v13,
+  h as v14,
+  g as v15,
+  _ as v16,
+  v as v17,
+  r as v2,
+  i as v3,
+  a as v4,
+  o as v5,
+  s as v6,
+  c as v7,
+  l as v8,
+  u as v9,
+};
+//# sourceMappingURL=s9e72ekAE-0.DkayZ4SP.mjs.map

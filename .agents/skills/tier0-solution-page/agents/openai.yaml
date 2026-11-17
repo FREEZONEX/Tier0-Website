@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tier0 解决方案页面"
+  short_description: "复用 MES 排版和 WMS 样式，新增内容与交互一致的解决方案页"
+  default_prompt: "使用 $tier0-solution-page，根据提供的中文材料新增 Tier0 解决方案页，复用当前 MES 布局与 WMS 视觉，验证桌面、平板、手机及滚动交互，仅修改测试版。"

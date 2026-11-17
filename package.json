@@ -1,0 +1,1 @@
+{"name":"tier0-cn-website","private":true,"type":"module","scripts":{"start":"node site/serve.js","check":"python3 tools/validate.py","package":"python3 tools/package.py"}}

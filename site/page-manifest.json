@@ -1,0 +1,191 @@
+{
+  "pages": 46,
+  "sitemapPages": 39,
+  "missingSitemapPages": [],
+  "entries": [
+    {
+      "url": "https://t02801.framer.website/",
+      "file": "index.html"
+    },
+    {
+      "url": "https://t02801.framer.website/product/tier0-platform",
+      "file": "supplemental/index.html"
+    },
+    {
+      "url": "https://t02801.framer.website/product/tier0-platform/uns",
+      "file": "subpages/product_tier0-platform_uns.html"
+    },
+    {
+      "url": "https://t02801.framer.website/product/tier0-platform/app-library",
+      "file": "subpages/product_tier0-platform_app-library.html"
+    },
+    {
+      "url": "https://t02801.framer.website/product/tier0-platform/data-collection",
+      "file": "subpages/product_tier0-platform_data-collection.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/menu",
+      "file": "subpages/resource_blogs_menu.html"
+    },
+    {
+      "url": "https://t02801.framer.website/solution/workforce-assets-tracking",
+      "file": "subpages/solution_workforce-assets-tracking.html"
+    },
+    {
+      "url": "https://t02801.framer.website/solution/digital-worker",
+      "file": "subpages/solution_digital-worker.html"
+    },
+    {
+      "url": "https://t02801.framer.website/solution/production-line-optimization",
+      "file": "subpages/solution_production-line-optimization.html"
+    },
+    {
+      "url": "https://t02801.framer.website/talk-to-team",
+      "file": "subpages/talk-to-team.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/events",
+      "file": "subpages/resource_events.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/downloads",
+      "file": "supplemental/subpages/resource_downloads.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/downloads-info",
+      "file": "subpages/resource_downloads-info.html"
+    },
+    {
+      "url": "https://t02801.framer.website/pricing",
+      "file": "subpages/pricing.html"
+    },
+    {
+      "url": "https://t02801.framer.website/product/tier0-platform/app-builder",
+      "file": "subpages/product_tier0-platform_app-builder.html"
+    },
+    {
+      "url": "https://t02801.framer.website/solution/wms",
+      "file": "subpages/solution_wms.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/events/tier0-at-hannover-messe-2026-unified-namespace-for-agentic-operations",
+      "file": "subpages/resource_events_tier0-at-hannover-messe-2026-unified-namespace-for-agentic-operations.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/events/benchmark",
+      "file": "subpages/resource_events_benchmark.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/events/webinar-uns",
+      "file": "subpages/resource_events_webinar-uns.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/events/webinar-real-demo",
+      "file": "subpages/resource_events_webinar-real-demo.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/industrial-digitalization-roi-unified-namespace",
+      "file": "subpages/resource_blogs_industrial-digitalization-roi-unified-namespace.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/tier0-vs-tulip",
+      "file": "subpages/resource_blogs_tier0-vs-tulip.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/tier0-vs-mqtt-brokers",
+      "file": "subpages/resource_blogs_tier0-vs-mqtt-brokers.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/tier0-vs-ignition",
+      "file": "subpages/resource_blogs_tier0-vs-ignition.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/tier0-vs-umh",
+      "file": "subpages/resource_blogs_tier0-vs-umh.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/tier0-vs-highbyte",
+      "file": "subpages/resource_blogs_tier0-vs-highbyte.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/full-stack-uns-platform",
+      "file": "subpages/resource_blogs_full-stack-uns-platform.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/tier0-emq-industrial-ai-data-foundation",
+      "file": "subpages/resource_blogs_tier0-emq-industrial-ai-data-foundation.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/what-is-unified-namespace",
+      "file": "subpages/resource_blogs_what-is-unified-namespace.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/what-is-an-industrial-app-platform",
+      "file": "subpages/resource_blogs_what-is-an-industrial-app-platform.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/what-is-lightweight-digitalization",
+      "file": "subpages/resource_blogs_what-is-lightweight-digitalization.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/from-excel-to-system-what-changes",
+      "file": "subpages/resource_blogs_from-excel-to-system-what-changes.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/what-is-shopfloor-digitalization",
+      "file": "subpages/resource_blogs_what-is-shopfloor-digitalization.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/reinventing-industrial-software",
+      "file": "subpages/resource_blogs_reinventing-industrial-software.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/uns-the-sole-key-to-industrial-digitalization",
+      "file": "subpages/resource_blogs_uns-the-sole-key-to-industrial-digitalization.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/lightweight-multimodal-models-for-edge-based-defect-detection",
+      "file": "subpages/resource_blogs_lightweight-multimodal-models-for-edge-based-defect-detection.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/discrete-event-simulation-combine-rl",
+      "file": "subpages/resource_blogs_discrete-event-simulation-combine-rl.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/ming-modern-iiot",
+      "file": "subpages/resource_blogs_ming-modern-iiot.html"
+    },
+    {
+      "url": "https://t02801.framer.website/resource/blogs/the-uns-approach",
+      "file": "subpages/resource_blogs_the-uns-approach.html"
+    },
+    {
+      "url": "https://t02801.framer.website/changelog",
+      "file": "subpages/changelog.html"
+    },
+    {
+      "url": "https://t02801.framer.website/terms",
+      "file": "subpages/terms.html"
+    },
+    {
+      "url": "https://t02801.framer.website/system-status",
+      "file": "subpages/system-status.html"
+    },
+    {
+      "url": "https://t02801.framer.website/security-advisories",
+      "file": "subpages/security-advisories.html"
+    },
+    {
+      "url": "https://t02801.framer.website/policy",
+      "file": "subpages/policy.html"
+    },
+    {
+      "url": "https://t02801.framer.website/tier0-policy",
+      "file": "subpages/tier0-policy.html"
+    },
+    {
+      "url": "https://t02801.framer.website/solution/mes",
+      "file": "subpages/solution_mes.html"
+    }
+  ]
+}

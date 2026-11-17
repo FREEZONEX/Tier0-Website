@@ -1,0 +1,9 @@
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-100-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:100;font-display:swap;}
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-200-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:200;font-display:swap;}
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-300-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:300;font-display:swap;}
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-400-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:400;font-display:swap;}
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-450-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:450;font-display:swap;}
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-500-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:500;font-display:swap;}
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-600-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:600;font-display:swap;}
+@font-face{font-family:"IBM Plex Sans SC";src:url("/assets/fonts/ibm-plex-sans-sc-700-site.woff2?v=20261117") format("woff2");font-style:normal;font-weight:700;font-display:swap;}
+html,body,body *,html body #main#main,html body #main#main *{font-family:"IBM Plex Sans SC",sans-serif!important;--framer-font-family:"IBM Plex Sans SC",sans-serif!important;--framer-blockquote-font-family:"IBM Plex Sans SC",sans-serif!important;}

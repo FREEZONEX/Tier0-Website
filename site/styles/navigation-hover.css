@@ -1,0 +1,5 @@
+/* Framer renders desktop dropdowns in a separate fixed portal. Extend its
+   hit area upward so the pointer can cross the gap below the trigger. */
+@media (min-width:1440px){
+ .framer-9lMB7.framer-v-fels62::before{content:"";position:absolute;left:0;right:0;top:-28px;height:28px;pointer-events:auto;background:transparent}
+}

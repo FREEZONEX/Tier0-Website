@@ -1,0 +1,15 @@
+dist/
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc
+*.zip
+.env
+.env.*
+!.env.example
+ssh/
+secrets/
+*.pem
+*.key
+id_rsa*
+id_ed25519*
