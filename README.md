@@ -1,6 +1,6 @@
 # Tier0 中文官网
 
-当前源码对应 2026-11-17 已上线版本，包含 MES 页面、本地 PDF 下载及下载页路由修复。`site/` 是唯一网站维护源；发版 ZIP 放 GitHub Releases，不提交进 Git。
+本仓库用于维护 Tier0 中文官网。`site/` 是唯一网站维护源；发版 ZIP 放 GitHub Releases，不提交进 Git。
 
 ## 本地运行
 
