@@ -115,3 +115,110 @@
 .mes-page #builder .mes-hero-app.mes-sidebar-collapsed .mes-sidebar-collapse{display:grid!important;margin:0!important;flex:0 0 28px;width:28px;height:28px;position:relative;z-index:2}
 /* Tablet hero breathing room below the fixed navigation. */
 @media(min-width:810px) and (max-width:1439px){.mes-page #builder{padding-top:144px!important}}
+
+/* Match approved EN feature density and desktop reading distance. */
+/* Give each desktop feature a longer reading interval before the next card covers it. */
+@media (min-width:1200px){
+.mes-page .mes-features>.mes-stack-card{margin-bottom:clamp(360px,55vh,600px)!important}
+.mes-page .mes-features>.mes-stack-card:before{height:max(calc(100% + clamp(360px,55vh,600px)),calc(100vh - 80px))!important}
+.mes-page .mes-features>#energy{margin-bottom:0!important}
+.mes-page .mes-stack-tail{height:clamp(600px,85vh,900px)}
+}
+
+/* Compact diagrams 03–05 while preserving readable labels and all content. */
+.mes-page :is(#namespace,#scheduling,#execution){padding-block:20px!important}
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-copy{margin-bottom:20px;max-width:1100px}
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-eyebrow{margin-bottom:12px}
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-copy h2{margin-bottom:12px;letter-spacing:-.5px}
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-copy>p{font-size:16px!important;line-height:1.5!important;max-width:1100px}
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-visual{padding:16px}
+.mes-page #namespace .mes-map-level{gap:20px}
+.mes-page #namespace .mes-map-level>button{padding:10px 14px;min-height:72px;column-gap:10px}
+.mes-page #namespace .mes-map-symbol{width:34px;height:34px}
+.mes-page #namespace .mes-map-symbol svg{width:22px;height:22px}
+.mes-page #namespace .mes-map-level strong{font-size:15px;line-height:1.3}
+.mes-page #namespace .mes-map-level small{font-size:11px;line-height:1.35;margin-top:3px}
+.mes-page #namespace .mes-map-connector{height:24px;line-height:24px}
+.mes-page #namespace .mes-map-hub{min-height:0;padding:12px 16px;gap:5px}
+.mes-page #namespace .mes-hub-icon{width:28px;height:28px}
+.mes-page #namespace .mes-map-hub strong{font-size:20px;line-height:1.3}
+.mes-page #namespace .mes-shared-keys{gap:5px}
+.mes-page #namespace .mes-shared-keys>span{padding:4px 7px;font-size:11px;line-height:1.4}
+.mes-page #scheduling .mes-schedule-app-head{padding:10px 16px}
+.mes-page #scheduling .evidence-tabs{min-height:38px;padding-inline:16px;gap:18px}
+.mes-page #scheduling .evidence-tabs button{padding-block:9px;line-height:1.4}
+.mes-page #scheduling [role=tabpanel] .mes-demo{min-height:0}
+.mes-page #scheduling .demo-content{padding:14px 16px!important}
+.mes-page #scheduling .demo-heading{margin-bottom:12px!important;min-height:26px}
+.mes-page #scheduling .mes-resource-row{min-height:78px}
+.mes-page #scheduling .mes-resource-label{padding:12px 10px;width:88px;line-height:1.4}
+.mes-page #scheduling .mes-resource-label small{display:block;font-size:10px;line-height:1.35;margin-top:5px}
+.mes-page #scheduling .mes-resource-lane{padding:10px 8px}
+.mes-page #scheduling [data-resource-job]{height:52px!important;padding:7px 10px!important;gap:4px;line-height:1.4}
+.mes-page #scheduling #orders-table :is(th,td){padding:9px 10px;line-height:1.4}
+.mes-page #scheduling .mes-order-inspector-fields{gap:8px}
+.mes-page #scheduling .load{margin:16px 0}
+.mes-page #execution .mes-execution-flow{padding:10px 12px;gap:22px;margin-bottom:14px}
+.mes-page #execution .mes-execution-flow>button{padding:10px 12px;gap:6px}
+.mes-page #execution .mes-execution-flow>button>span{width:32px;height:32px}
+.mes-page #execution .mes-execution-flow>button>span svg{width:22px;height:22px}
+.mes-page #execution .mes-execution-flow>button strong{font-size:14px;line-height:1.35}
+.mes-page #execution .demo-content{padding:14px 16px}
+.mes-page #execution .demo-heading{margin-bottom:10px}
+.mes-page #execution .mes-demo :is(td,th){padding:8px 10px;font-size:12px;line-height:1.4}
+.mes-page #execution .demo-buttons{margin-top:10px}
+.mes-page #execution #work-status{margin-top:8px;line-height:1.4}
+.mes-page #execution .mes-execution-panel{padding:14px 16px}
+.mes-page #execution .mes-execution-panel h3{margin:4px 0 10px}
+.mes-page #execution .mes-task-snapshot{margin:10px 0;gap:10px}
+.mes-page #execution .mes-task-snapshot>div{padding:10px}
+@media (min-width:1200px){
+.mes-page :is(#namespace,#scheduling,#execution){top:var(--mes-readable-top,80px)!important}
+}
+@media (max-width:809px){
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-copy>p{font-size:14px!important}
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-visual{padding:12px}
+.mes-page #namespace .mes-map-level{gap:8px}
+.mes-page #namespace .mes-map-level>button{padding:10px 5px}
+.mes-page #namespace .mes-map-level strong{font-size:12px}
+.mes-page #namespace .mes-map-level small{font-size:10px}
+.mes-page #execution .mes-execution-flow{gap:10px;padding:8px}
+.mes-page #execution .mes-execution-flow>button{padding:10px 8px}
+.mes-page #execution .mes-execution-flow>button strong{font-size:13px}
+.mes-page #scheduling .evidence-tabs{gap:10px;padding-inline:10px}
+.mes-page #scheduling .evidence-tabs button{font-size:10px}
+.mes-page #scheduling .mes-resource-label{width:60px;padding:10px 5px}
+.mes-page #scheduling .mes-resource-lane{padding:8px 4px;gap:4px}
+.mes-page #scheduling [data-resource-job]{padding:6px 4px!important}
+}
+
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-copy{margin-inline:0}
+
+/* Relax compact diagram spacing slightly and restore the scheduling panel outline. */
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-visual{padding:18px}
+.mes-page #namespace .mes-map-level>button{padding:11px 15px;min-height:79px}
+.mes-page #namespace .mes-map-connector{height:27px;line-height:27px}
+.mes-page #namespace .mes-map-hub{padding:14px 18px;gap:6px}
+.mes-page #scheduling .mes-schedule-app-head{padding:11px 18px}
+.mes-page #scheduling .demo-content{padding:16px 18px!important}
+.mes-page #scheduling .demo-heading{margin-bottom:14px!important}
+.mes-page #scheduling .mes-resource-row{min-height:86px}
+.mes-page #scheduling .mes-resource-label{padding:14px 11px}
+.mes-page #scheduling .mes-resource-lane{padding:11px 9px}
+.mes-page #scheduling [data-resource-job]{height:57px!important;padding:8px 11px!important}
+.mes-page #scheduling #orders-table :is(th,td){padding:10px 11px}
+.mes-page #scheduling [role=tabpanel] .mes-demo{border:1px solid #e4e4e4;border-top:0;border-radius:0 0 6px 6px;overflow:hidden}
+.mes-page #execution .mes-execution-flow{padding:11px 14px;gap:24px;margin-bottom:16px}
+.mes-page #execution .mes-execution-flow>button{padding:11px 14px;gap:7px}
+.mes-page #execution .demo-content{padding:16px 18px}
+.mes-page #execution .mes-demo :is(td,th){padding:9px 11px}
+.mes-page #execution .mes-execution-panel{padding:16px 18px}
+@media (max-width:809px){
+.mes-page :is(#namespace,#scheduling,#execution) .mes-feature-visual{padding:13px}
+.mes-page #namespace .mes-map-level>button{padding:11px 6px}
+.mes-page #execution .mes-execution-flow{gap:11px;padding:9px}
+.mes-page #execution .mes-execution-flow>button{padding:11px 9px}
+.mes-page #scheduling .mes-resource-label{padding:11px 6px}
+.mes-page #scheduling .mes-resource-lane{padding:9px 5px}
+.mes-page #scheduling [data-resource-job]{padding:7px 5px!important}
+}
