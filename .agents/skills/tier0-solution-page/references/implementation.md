@@ -1,17 +1,21 @@
 # Current project reference
 
-Snapshot: 2026-11-17. Verify live files before use; paths and query versions can change.
+Snapshot: 2026-11-19. Verify live files before use; paths and query versions can change.
 
-## Locate the active source
+## Locate the maintenance source and active test copy
 
-This repository's `site/` is the single maintenance source, relative to the repository root. Do not use old `outputs/` copies from the original export workspace. Run `npm start` for local preview (default localhost:3000; `PORT=3105 npm start` uses 3105). MES reference: `/solution/mes`; WMS reference: `/solution/wms`.
+Workspace: `/Users/shufan/Documents/Codex/2026-11-09/gh-repo-clone-danbenba-framerexport`
 
-All source paths below are relative to `site/`. Historical diagnostic scripts under `work/` are not shipped in this repository; create new local evidence as needed.
+Canonical GitHub source: `tier0-website-github/site/` in `FREEZONEX/Tier0-Website`. Read its `AGENTS.md` and current Git status before synchronization. Published v1.0.1 is a historical checkpoint, not an instruction to redeploy it.
+
+Active test site relative to workspace: `outputs/tier0-cn-migration-20261116/t02801-site/`.
+Preview: `http://localhost:3105/solution/mes`; WMS: `/solution/wms`.
+Server command if needed: `PORT=3105 node outputs/tier0-cn-migration-20261116/t02801-site/serve.js`. Check an existing listener first.
 
 Reference HTML: `subpages/solution_mes.html`, `subpages/solution_wms.html`.
 MES preserves native Framer header `.framer-9lMB7`, footer `.framer-ZtfjZ` and engineering-service `.framer-8ctdnk`; content is mounted from `#mes-content-template` by `scripts/mes-shell.js`. It is not a conventional React source project.
 
-Read `mes-shell.js` to discover the actual script chain. Current behavior includes `mes-layout.js`, `mes.js`, `mes-hero-rich.js`, `mes-sidebar-match.js`, `mes-content-variety.js`, `mes-content-refinement.js`, `mes-visual-polish.js`, `mes-detail-finish.js` and `mes-lucide.js`. Current CSS has several overrides; final behavior is in `styles/mes-detail-finish.css`. Do not blindly clone stale scratch builders under `work/`.
+Read `mes-shell.js` to discover the actual script chain. Current behavior includes `mes-layout.js`, `mes.js`, `mes-hero-rich.js`, `mes-sidebar-match.js`, `mes-content-variety.js`, `mes-content-refinement.js`, `mes-visual-polish.js`, `mes-detail-finish.js` and `mes-lucide.js`. Current CSS has several overrides; Hero-specific desktop behavior is in `styles/mes-hero-rich.css`; section-depth behavior is in `styles/mes-detail-finish.css`. WMS desktop Hero changes are scoped in `styles/wms-hero-frame.css` and `scripts/wms-hero-frame.js`. Do not blindly clone stale scratch builders under `work/`.
 
 Shared navigation: `scripts/navigation-consistency.js`. It normalizes links, clones native rows, adds MES, assigns solution ordering and forces full-document navigation to avoid Framer SPA shell persistence. If extending it, preserve native SVG assets and keep full row spacing. Footer MES originally cloned only a paragraph inside WMS's row, which caused incorrect gaps: clone the whole RichTextContainer row.
 
@@ -28,7 +32,7 @@ Check `serve.js` and the site's manifest for routing rather than assuming URL-to
 - Native hero static grid: 50px spacing, 1px lines, rgba(5,11,20,.02). Do not add a second static grid on the hero section.
 - Hero black image `/assets/images/rWk246mR3EIdETS2sGP2UVqGmAI.png`; engineering-service native image `/assets/images/56e9Et8KjR53hTiChM69qWqslE.png`.
 
-Native WMS canvas lives in `.framer-1o0p5mq-container`. Its implementation is in `scripts/vendor/UIIOtbKw0ARUCMbFJsidtnAC4b8Uie29Nyu2cIX6Ruc.CiPSlD_P.mjs`: baseSpeed 1, maxLines 9, spawnProbability .08, lineLength 150, cellSize 50. Reuse the component, do not change vendor behavior globally. MES moves the live canvas into its hero and sizes it to the hero region.
+Native WMS canvas lives in `.framer-1o0p5mq-container`. Its implementation is in `scripts/vendor/UIIOtbKw0ARUCMbFJsidtnAC4b8Uie29Nyu2cIX6Ruc.CiPSlD_P.mjs`: baseSpeed 1, maxLines 9, spawnProbability .08, lineLength 150, cellSize 50. Reuse the component, do not change vendor behavior globally. MES moves the live canvas into its grid stage on desktop and into the Hero on smaller layouts. WMS uses its native canvas. Read `hero-layout.md` before changing either placement.
 
 Native blur behavior in `scripts/vendor/CoveredDepth.CpvS7AHa.mjs`: `progress=clamp(1-(nextTop-80)/320,0,1)`, opacity `1-.78*progress`, blur `4*progress`px. White card coverage remains opaque while its content fades. Desktop sticky top 80px; small layouts use normal flow. Respect reduced motion.
 
