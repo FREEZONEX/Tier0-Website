@@ -9,17 +9,17 @@ Create a sibling solution page whose content changes while the approved MES layo
 
 ## Establish the page
 
-Read [references/implementation.md](references/implementation.md) before editing. Identify the active test site and the current MES/WMS references. Obtain the new theme, source material and intended route from the request; infer routine choices and state them. Ask only when missing information changes the business meaning. User instructions override this skill.
+Read [references/implementation.md](references/implementation.md) to locate the current source. For Hero work or a new sibling page, also read [references/hero-layout.md](references/hero-layout.md); it records the approved floating-card layout and native-component loading constraints. Identify the active test site and the current MES/WMS references. Obtain the new theme, source material and intended route from the request; infer routine choices and state them. Ask only when missing information changes the business meaning. User instructions override this skill.
 
-Only change the test copy unless the user requests otherwise. Creating a page does not authorize production deployment, pushing a repository, replacing the production package or changing the reference pages. Keep the original navigation and footer working.
+Establish the requested write target first: the active preview is a test copy; `tier0-website-github/site/` is the GitHub maintenance source. For a visual trial, only change the test copy unless the user requests otherwise. Creating a page does not authorize production deployment, pushing a repository, replacing the production package or changing the reference pages. Keep the original navigation and footer working.
 
 ## Translate content into the reference layout
 
 - Inspect the supplied Chinese material. Extract the audience, business objects, lifecycle, actions, constraints, exceptions and outcomes before constructing the visuals.
-- Preserve MES's hero structure, section hierarchy, mixture of full-width diagrams and two-column illustrations, final service block and footer. Use the appropriate number of sections for the supplied content; do not force eight when the source does not support eight.
+- Preserve the currently approved Hero and section hierarchy, mixture of full-width diagrams and two-column illustrations, final service block and footer. The desktop Hero is now a centered floating card with copy left and app right; the old full-width split and centered title-above-app layouts are historical references. Use the appropriate number of sections for the supplied content; do not force eight when the source does not support eight.
 - Write page-specific titles and short introductions. Simplify prose inside illustrations; avoid long instructional footnotes, repeated “click here” hints and redundant selection controls.
 - Show meaningful interactions: selecting a stage changes its actual content; a missing prerequisite blocks its dependent action; completion and reset restore consistent states. Use a shared data model so order, equipment, batch and totals agree across illustrations. Do not copy MES facts into an unrelated solution.
-- Use source-backed claims only. Mark invented illustrative records as sample data somewhere readable in the illustration/page; do not fabricate customer, performance, savings or product capability claims. Preserve AI as “AI”, not “人工智能”.
+- Use source-backed claims only. Distinguish illustrative data from real operational data without filling the Hero, drawer headings or individual records with repeated “示例/演示数据” labels; use a concise accessible disclosure where appropriate and honor the requested clean Hero copy; do not fabricate customer, performance, savings or product capability claims. Preserve AI as “AI”, not “人工智能”.
 - Prefer one representative record unless comparison teaches something. Static comparisons need no extra record switch. Preserve interactions that explain distinct content, such as process steps, scheduling views and resource types.
 
 ## Match the approved visual behavior
@@ -36,7 +36,9 @@ Add the route and manifest entry using the existing server conventions. Reuse na
 
 Use isolated per-page content/styles; do not introduce another long cascade of patches or apply a global find/replace to WMS/MES. Inspect the current initialization chain and consolidate the new page into an understandable module with a local data model. Do not execute stale build scripts that overwrite the approved reference.
 
-Verify the rendered page at desktop 1490px, tablet 882px and phone 390px, plus a breakpoint boundary if changed. Check full page width, titles/widows, top alignment, footer, menu click targets, every interactive state and console errors. Verify hero text grows over time and an actual send-button click opens exactly one new login tab without navigating the source page. Use actual mouse clicks for nested-control navigation checks; programmatic `.click()` alone may miss default anchor navigation. Scroll through all cover transitions, final exit and reverse scroll; capture evidence. Bump changed versioned asset URLs because the server caches them immutably.
+Verify desktop 1490px, a wide desktop (1920px or wider), tablet 882px and phone 390px, plus both sides of any changed breakpoint. Check the first paint, hydration and a later interactive state, including a reload with cache disabled; do not verify only the final screenshot. Check full page width, titles/widows, top alignment, footer, menu click targets, every interactive state and console errors. Verify hero text grows over time and an actual send-button click opens exactly one new login tab without navigating the source page. Use actual mouse clicks for nested-control navigation checks; programmatic `.click()` alone may miss default anchor navigation. Scroll through all cover transitions, final exit and reverse scroll; capture evidence. Bump changed versioned asset URLs because the server caches them immutably.
+
+When asked to sync GitHub, copy only the reviewed changes into the maintenance source, inspect the diff, run its checks and use its branch/PR convention; exclude unrelated test-copy differences. Publishing needs separate user authorization and the existing release workflow. A skill edit does not authorize pushing or deploying.
 
 Deliver a local preview link, a concise change report and any remaining limitations. Do not claim the entire site or a real backend workflow was verified from a few screenshots.
 
