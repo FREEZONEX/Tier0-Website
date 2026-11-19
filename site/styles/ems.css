@@ -1,0 +1,154 @@
+[data-ems] [hidden]{display:none!important}
+[data-ems] .mes-feature-visual .shot{width:100%;padding:0;cursor:zoom-in;text-align:left}
+[data-ems] .shot img,[data-ems] dialog img{display:block;width:100%;height:auto}
+[data-ems] dialog{box-sizing:border-box;max-width:min(960px,94vw);max-height:90vh;padding:24px;border:1px solid #e5e7e5;border-radius:12px;color:#050b14}
+[data-ems] dialog::backdrop{background:#050b1466}
+[data-ems] .app-filter,[data-ems] .ems-app .demo-heading,[data-ems] .namespace-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+[data-ems] .ems-app button,[data-ems] .ems-app select,[data-ems] .agent-layout button,[data-ems] .namespace button,[data-ems] dialog button{font:inherit;color:inherit;border:1px solid #e5e7e5;background:white;border-radius:6px;padding:5px 9px;cursor:pointer}
+[data-ems] .agent-layout [aria-pressed=true]{background:#f1f2f0}
+[data-ems] .ems-app .mes-consumption-chart button{border:0;cursor:default}
+[data-ems] .agent-layout,[data-ems] .namespace{width:100%;min-width:0;box-sizing:border-box;border-radius:12px;background:#fff;padding:20px;box-shadow:0 8px 28px #050b140d}
+[data-ems] .agent-panel,[data-ems] .agent-canvas{padding:12px;min-width:0}
+[data-ems] .namespace details,[data-ems] .namespace .leaf,[data-ems] .agent-layout .insight-block{padding:9px 12px;border-bottom:1px solid #eceeeb}
+[data-ems] .namespace summary{cursor:pointer}
+[data-ems] .namespace .leaf{display:flex;justify-content:space-between;gap:8px}
+[data-ems] .tree-info,[data-ems] .canvas-caption,[data-ems] #period-note{color:#62666b;font-size:13px;margin-top:12px}
+[data-ems] table{width:100%;border-collapse:collapse}
+[data-ems] th,[data-ems] td{text-align:left;padding:8px;border-bottom:1px solid #ebebeb}
+[data-ems] .mes-feature-visual>*{overflow-wrap:anywhere}
+.ems-mobile-tabs{display:none!important}
+@media(max-width:760px){[data-ems] .ems-mobile-tabs{display:flex!important}}
+
+/* App Builder preview: App Scaffold StatCard and semantic chart colors. */
+[data-ems] #ems-app .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+[data-ems] #ems-app .kpis>div{display:grid;align-content:start;min-height:116px;padding:16px;border:1px solid #dedee0;border-radius:4px;background:white;box-shadow:0 1px 2px #050b140d}
+[data-ems] #ems-app .kpis span,[data-ems] #ems-app .kpis small{color:#62666b;font-size:14px}
+[data-ems] #ems-app .kpis b{margin:12px 0 5px;color:#050b14;font:600 36px/1 "IBM Plex Sans SC",sans-serif;letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+[data-ems] #ems-app .demo-heading{font-size:20px;font-weight:500}
+[data-ems] .mes-hero-app .mes-hero-sidebar-nav button.active{background:#ededee!important;color:#050b14!important}
+[data-ems] .ems-series-row{display:grid;grid-template-columns:minmax(45px,.7fr) minmax(45px,3fr) minmax(80px,1fr);align-items:center;gap:12px;padding:8px 0;font-size:13px;color:#050b14}
+[data-ems] .ems-series-row>div{height:10px;background:#f0f1ee;border-radius:3px;overflow:hidden}
+[data-ems] .ems-series-row i{display:block;height:100%;background:#cbf368}
+[data-ems] .ems-series-row strong{text-align:right;font-weight:500;font-variant-numeric:tabular-nums}
+[data-ems] .ems-agent .t0-tabs{display:flex;gap:4px}
+[data-ems] .ems-agent .t0-tabs button,[data-ems] .ems-agent .agent-questions button{font:inherit;color:inherit;background:white;border:1px solid #dedee0;border-radius:4px;padding:5px 9px;cursor:pointer}
+[data-ems] .ems-agent .t0-tabs button{background:transparent;border-color:transparent}
+[data-ems] .ems-agent .t0-tabs button[aria-pressed=true]{background:#ededee}
+[data-ems] .ems-agent .agent-input-row{display:contents}
+[data-ems] .ems-agent #agent-form input{min-width:0;flex:1}
+[data-ems] .ems-agent #agent-result{width:100%;overflow-x:auto;margin:10px 0}
+[data-ems] .ems-agent .t0-source{overflow-wrap:anywhere;color:#62666b;font-size:12px}
+[data-ems] .ems-agent #agent-cards,[data-ems] .ems-agent #agent-tasks{padding:16px}
+[data-ems] .ems-agent #pin-card,[data-ems] .ems-agent #agent-tasks button,[data-ems] .ems-agent #remove-card{cursor:pointer;font:inherit;color:#050b14;background:#f4f4f5;border:1px solid #dedee0;border-radius:4px;padding:5px 10px}
+@media(min-width:1440px){
+  [data-ems] #uns-agent .mes-feature-visual{height:605px;box-sizing:border-box}
+  [data-ems] #uns-agent .ems-agent{max-height:100%;overflow:auto}
+}
+
+/* Platform composer: Frontend chat-panel/chat-composer. Keep scrolling inside the conversation. */
+[data-ems] #uns-agent .ems-agent{display:flex;flex-flow:column;width:100%;min-width:0;height:100%;max-height:100%;box-sizing:border-box;overflow:visible;background:white;border:1px solid #dedee0;border-radius:4px;color:#050b14;font:400 14px/20px "IBM Plex Sans SC",sans-serif}
+[data-ems] .ems-agent *,[data-ems] .ems-data-grid *{box-sizing:border-box}
+[data-ems] .ems-agent #agent-chat{display:flex;flex:1;min-height:0;min-width:0;flex-direction:column}
+[data-ems] .ems-agent #agent-chat[hidden]{display:none}
+[data-ems] .ems-agent .t0-toolbar,[data-ems] .ems-agent .t0-tabs{flex:none;padding:8px 16px;align-items:center;border-bottom:1px solid #ededee}
+[data-ems] .ems-agent .t0-toolbar{display:flex;gap:8px}
+[data-ems] .ems-agent .t0-agent-body{display:grid;gap:12px;align-content:start;min-width:0;min-height:0;padding:16px;overflow-y:auto}
+[data-ems] .ems-agent .t0-agent-body>*{min-width:0;max-width:100%;margin:0}
+[data-ems] .ems-agent .t0-question,[data-ems] .ems-agent .t0-answer{color:#050b14;font:400 14px/22px "IBM Plex Sans SC",sans-serif}
+[data-ems] .ems-agent .t0-question{justify-self:end;border-radius:4px;background:#f5f5f6;padding:8px 12px}
+[data-ems] .ems-agent #agent-result{margin:0;border:1px solid #dedee0;border-radius:4px;overflow:visible}
+[data-ems] .ems-agent #pin-card{display:inline-flex;align-items:center;gap:6px;justify-self:start;min-height:28px;font:500 12px/16px "IBM Plex Sans SC",sans-serif;padding:4px 8px;border-radius:4px}
+[data-ems] .ems-agent .ems-composer{flex:none;display:grid;gap:8px;padding:12px 16px;border-top:1px solid #ededee;min-width:0}
+[data-ems] .ems-agent .agent-questions{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+[data-ems] .ems-agent .agent-questions button{font-size:12px;line-height:16px;padding:4px 8px}
+[data-ems] .ems-agent #agent-form{display:flex;align-items:center;gap:8px;width:100%;min-width:0;margin:0;padding:6px 8px 6px 12px;border:1px solid #d4d4d6;border-radius:4px;background:#fff}
+[data-ems] .ems-agent #agent-form input{border:0;background:transparent;font:inherit;line-height:24px;width:0;padding:0}
+[data-ems] .ems-agent #agent-form button{display:grid;place-items:center;flex:0 0 28px;width:28px;height:28px;border:0;border-radius:4px;background:#cbf368;color:#050b14;padding:0;cursor:pointer}
+[data-ems] .ems-agent #agent-form button svg{width:14px;height:14px}
+[data-ems] .ems-agent #agent-form:focus-within{outline:2px solid #a2db1a;outline-offset:1px}
+
+/* App Scaffold TableLayout, DataGrid medium density and StatusBadge. */
+[data-ems] .ems-data-grid{box-sizing:border-box;width:100%;min-width:0;background:white;border:1px solid #dedee0;border-radius:4px;box-shadow:0 1px 2px #050b140d;color:#050b14}
+[data-ems] .ems-data-grid header{display:flex;align-items:center;gap:8px;min-height:48px;padding:12px 16px;border-bottom:1px solid #dedee0;font:500 16px/24px "IBM Plex Sans SC",sans-serif}
+[data-ems] :is(.ems-data-grid,#agent-result) table{table-layout:auto;width:100%;margin:0;border-spacing:0;border-collapse:collapse;background:white}
+[data-ems] :is(.ems-data-grid,#agent-result) th{height:40px;padding:8px 12px;text-align:left;font:500 12px/16px "IBM Plex Sans SC",sans-serif;background:#f7f7f8;color:#050b14;border-bottom:1px solid #dedee0}
+[data-ems] :is(.ems-data-grid,#agent-result) td{height:48px;padding:8px 12px;vertical-align:middle;font:400 14px/20px "IBM Plex Sans SC",sans-serif;color:#050b14;border-bottom:1px solid #ededee}
+[data-ems] :is(.ems-data-grid,#agent-result) tr:last-child td{border-bottom:0}
+[data-ems] .ems-status{display:inline-flex;align-items:center;gap:6px;height:22px;white-space:nowrap;border:1px solid #ebd6a5;border-radius:4px;background:#fff8e6;color:#825900;padding:0 8px;font:500 12px/20px "IBM Plex Sans SC",sans-serif}
+[data-ems] .ems-status:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+[data-ems] .ems-status[data-tone=closed]{color:#52525b;background:#f4f4f5;border-color:#dedee0}
+@media(max-width:600px){[data-ems] .ems-data-grid :is(th,td){padding-inline:8px}[data-ems] .ems-agent .ems-composer{padding:8px}}
+[data-ems] #uns-agent .mes-feature-visual{height:auto;min-height:0}
+[data-ems] .mes-feature-visual .ems-react-frame{flex:0 0 auto;border-radius:4px}
+[data-ems] .dashboard-main:has(.ems-react-frame){padding:0;overflow:auto}
+.mes-page[data-ems] .mes-hero-app:has(>.ems-screen){display:block!important;padding:0!important;overflow:hidden}
+[data-ems] .ems-screen{border:0;width:100%;height:100%;display:block;background:#f6f7f8}
+.mes-page[data-ems] .mes-features>.ems-feature{display:grid!important;grid-template-columns:minmax(0,36fr) minmax(0,64fr)!important;align-items:center!important;gap:clamp(24px,3.5vw,72px)!important;}
+.mes-page[data-ems] .ems-feature:nth-child(even){grid-template-columns:minmax(0,64fr) minmax(0,36fr)!important}
+.mes-page[data-ems] .ems-feature:nth-child(even) .mes-feature-visual{grid-column:1;grid-row:1}
+.mes-page[data-ems] .ems-feature:nth-child(even) .mes-feature-copy{grid-column:2}
+.mes-page[data-ems] .ems-feature .mes-feature-visual{display:block!important;padding:0!important;min-width:0!important;width:100%!important;height:auto!important;aspect-ratio:1.58;background:#fff;border:1px solid #dedee0;border-radius:6px;overflow:hidden}
+.mes-page[data-ems] .ems-feature .mes-feature-copy{width:100%!important;max-width:100%;text-align:left;padding:0}
+.ems-mini-flow,.ems-mini-bars{box-sizing:border-box;border-top:1px solid #dedee0;margin:24px 0 0;padding:16px 0 0;font-size:13px}
+.ems-mini-flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;list-style:none}.ems-mini-flow li{display:flex;align-items:center;gap:8px;background:#f6f7f4;border:1px solid #e2e5dc;border-radius:4px;padding:7px 9px}.ems-mini-flow li+li:before{content:'→';color:#50740e}
+.ems-mini-bars>div{display:grid;grid-template-columns:52px 1fr 50px;gap:8px;align-items:center;margin-top:9px}.ems-mini-bars i{height:10px;background:linear-gradient(to right,#a8ce53 var(--value),#f0f1ed var(--value))}.ems-mini-bars>div:first-of-type i{background:#c3c8bd}.ems-mini-bars b{text-align:right}
+@media(max-width:1099px){.mes-page[data-ems] .mes-features>.ems-feature{grid-template-columns:1fr!important}.mes-page[data-ems] .ems-feature:nth-child(even) :is(.mes-feature-visual,.mes-feature-copy){grid-column:1;grid-row:auto}.mes-page[data-ems] .ems-feature .mes-feature-visual{min-height:340px}}
+.mes-page[data-ems] #uns-agent.ems-feature .mes-feature-visual{aspect-ratio:auto;padding:16px!important;background:#f0f8df}
+
+.mes-page[data-ems] #namespace>.mes-data-map{grid-column:1/-1;grid-row:2;width:100%;box-sizing:border-box}
+@media(min-width:1200px){.mes-page[data-ems] .mes-features>#namespace{top:var(--ems-namespace-top,80px)!important}}
+.mes-page[data-ems] .mes-features>:is(#namespace,#scene-5).ems-feature{grid-template-columns:minmax(0,40fr) minmax(0,60fr)!important}
+.mes-page[data-ems] :is(#namespace,#scene-5).ems-feature>.mes-feature-copy{grid-column:1;grid-row:1}
+.mes-page[data-ems] :is(#namespace,#scene-5).ems-feature>.mes-feature-visual{grid-column:2;grid-row:1}
+[data-ems] #namespace .ems-sources{display:grid;gap:10px;margin:20px 0}
+[data-ems] .ems-sources>div{display:grid;gap:4px;border:1px solid #dedee0;padding:12px 16px;font-size:14px;background:white}
+[data-ems] .ems-sources small,[data-ems] .ems-sources em{color:#51721c}
+[data-ems] .ems-route,[data-ems] .viz-title,[data-ems] .balance-result{font-size:13px;color:#62666b;margin:12px 0}
+[data-ems] .ems-uns-toolbar{display:flex;align-items:center;gap:8px;padding:14px 16px;background:white;border-bottom:1px solid #dedee0}
+[data-ems] .ems-uns-toolbar strong{margin-right:auto}
+[data-ems] .ems-uns-toolbar button{font:inherit;font-size:13px;padding:4px 8px;border:0;border-radius:4px;background:transparent;cursor:pointer}
+[data-ems] .ems-uns-toolbar button[aria-pressed=true]{background:#eef4e6}
+[data-ems] #namespace .mes-feature-visual{display:flex!important;flex-direction:column;background:#f4f8eb;min-height:360px!important}
+[data-ems] #namespace .namespace,[data-ems] #namespace [data-uns-chat]{flex:1;min-height:0;overflow:auto}
+[data-ems] .balance-viz,[data-ems] .unit-viz{margin-top:20px;padding-top:10px;border-top:1px solid #dedee0}
+[data-ems] .meter-total,.mes-page .bar-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0}
+[data-ems] .meter-bar{display:grid;grid-template-columns:4fr 1fr;gap:3px;margin:8px 0}
+[data-ems] .meter-bar>div{background:#e0e8ca;text-align:center;padding:12px 4px;font-size:13px}
+[data-ems] .meter-bar>div+div{background:#f8e8cf}
+[data-ems] .bar-row>div{flex:1;background:#f1f2ee}.mes-page .bar-row i{display:block;height:13px;background:#bcc4b6}.mes-page .bar-row.current i{background:#b2ed1d}
+[data-ems] .unit-change{color:#50720b;font-weight:600}
+[data-ems] .checks{list-style:disc;padding-left:20px;color:#505864}
+@media(max-width:1099px){.mes-page[data-ems] .mes-features>:is(#namespace,#scene-5).ems-feature{grid-template-columns:1fr!important}.mes-page[data-ems] :is(#namespace,#scene-5).ems-feature>.mes-feature-visual{grid-column:1;grid-row:2}.mes-page[data-ems] #namespace>.mes-data-map{grid-row:3}}
+
+[data-ems] .process-viz,[data-ems] .ems-route{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}
+[data-ems] .process-viz span{padding:10px;background:#f6f7f4;border:1px solid #dde2d5;font-size:14px}
+[data-ems] .process-viz b,[data-ems] .ems-route b,[data-ems] .ems-sources>div>b{color:#50721c;font-weight:500}
+[data-ems] .checks{margin:16px 0;display:grid;gap:8px}
+
+@media(min-width:1100px){.mes-page[data-ems] .ems-feature .mes-feature-visual:has(>iframe.ems-screen[src*="panel.html"]){position:relative}.mes-page[data-ems] .ems-feature .mes-feature-visual>iframe.ems-screen[src*="panel.html"]{position:absolute;inset:0 auto auto 0}}
+
+[data-ems] #namespace [hidden]{display:none!important}[data-ems] #namespace .ems-uns-toolbar{flex-shrink:0}.ems-workbench header select{width:auto}
+
+[data-ems] .process-viz{display:grid;gap:8px;margin:24px 0}.process-steps{display:flex;align-items:center;gap:10px}.process-steps i{width:clamp(10px,2vw,32px);height:1px;background:#c9ced2}.process-steps button{background:transparent;color:#58616b;cursor:pointer;border:0;border-bottom:2px solid transparent;font:inherit;font-size:14px;padding:6px 0}.process-steps button[aria-pressed=true]{border-bottom-color:#18212b;color:#111820;font-weight:600}[data-ems] .process-viz p{margin:0;font-size:14px;line-height:1.6}.process-steps button:focus-visible{outline:2px solid #638332;outline-offset:3px}
+@media(max-width:1099px){.mes-page[data-ems] .mes-features>.ems-feature>.mes-feature-visual{aspect-ratio:1.48;min-height:360px}.mes-page[data-ems] #uns-agent .mes-feature-visual{aspect-ratio:auto}.mes-page[data-ems] #namespace .mes-feature-visual{display:flex!important}}
+
+.mes-page[data-ems] #uns-agent.ems-feature .mes-feature-visual,.mes-page[data-ems] #namespace.ems-feature .mes-feature-visual{background:linear-gradient(180deg,#f0fbd2,#e0f6a6);padding:16px!important;border:0;border-radius:0}
+.mes-page[data-ems] #namespace.ems-feature .mes-feature-visual{display:flex!important;flex-direction:column}
+[data-ems] #namespace .ems-uns-toolbar{border:1px solid #e3e8da;border-bottom:1px solid #eceee9;border-radius:10px 10px 0 0;gap:6px;font-size:15px}
+[data-ems] #namespace .ems-uns-toolbar button[aria-pressed=true]{background:#f0f1f2;color:#18212c}
+[data-ems] #namespace .namespace,[data-ems] #namespace [data-uns-chat]{background:white;border:1px solid #e3e8da;border-top:0;border-radius:0 0 10px 10px}
+[data-ems] #namespace .tree-body{padding:16px 18px}.mes-page[data-ems] #namespace .tree-branch{border-left:2px solid #e6eddd;padding-left:12px;margin:8px 0}.mes-page[data-ems] #namespace .leaf{background:#f8f9f6;border:0;border-radius:4px;margin:4px 0;padding:8px 10px}
+[data-ems] #namespace .ems-sources{gap:8px}.mes-page[data-ems] .ems-sources>div{background:#f3fae7;border:1px solid #e1ebd3;border-radius:7px;padding:12px 16px;gap:3px}.ems-sources strong{font-size:16px}.ems-sources span{font-size:14px;color:#4b5656}.ems-sources b{font-size:13px}
+.mes-page[data-ems] .mes-features>#alarms{margin-bottom:0!important}.mes-page[data-ems] .mes-features>#alarms:before{height:100%!important}.mes-page[data-ems] .mes-stack-tail{height:32px!important}.mes-page[data-ems] .mes-features{padding-bottom:0!important}
+@media(max-width:650px){.mes-page[data-ems] #uns-agent.ems-feature .mes-feature-visual,.mes-page[data-ems] #namespace.ems-feature .mes-feature-visual{padding:10px!important}}
+/* Both UNS demonstrations use the WMS desktop frame; only their contents scroll. */
+.mes-page[data-ems] .mes-features>:is(#uns-agent,#namespace).ems-feature>.mes-feature-visual{box-sizing:border-box;width:min(100%,726px)!important;max-width:726px;height:600px!important;min-height:0!important;aspect-ratio:auto;overflow:hidden}
+.mes-page[data-ems] #uns-agent .mes-feature-visual>iframe,.mes-page[data-ems] #namespace .mes-feature-visual>[data-uns-chat]{display:block;width:100%;min-width:0;min-height:0;height:100%;border:1px solid #ebebeb;border-radius:10px;background:white}
+.mes-page[data-ems] #namespace .mes-feature-visual>[data-uns-chat]{border-radius:0 0 10px 10px;height:0;flex:1 1 0}
+.mes-page[data-ems] #namespace .tree-body{padding:16px}.mes-page[data-ems] #namespace .tree-body details{margin:10px 0;border:1px solid #ebebeb;border-radius:4px;box-shadow:0 4px 16px #0000000d;overflow:hidden}.mes-page[data-ems] #namespace .tree-body summary{cursor:pointer;background:#fcfcfc;padding:10px 12px;font-size:14px;font-weight:550}.mes-page[data-ems] #namespace .tree-branch{margin:0;padding:12px;border:0;border-top:1px solid #ebebeb}.mes-page[data-ems] #namespace .leaf{background:white;border-bottom:1px solid #ebebeb;gap:12px;flex-wrap:wrap}
+@media(min-width:1100px){.mes-page[data-ems] .mes-features>#uns-agent.ems-feature{grid-template-columns:minmax(0,726fr) minmax(0,500fr)!important}.mes-page[data-ems] .mes-features>#namespace.ems-feature{grid-template-columns:minmax(0,500fr) minmax(0,726fr)!important}}
+@media(max-width:1099px){.mes-page[data-ems] .mes-features>:is(#uns-agent,#namespace).ems-feature>.mes-feature-visual{justify-self:center;height:clamp(520px,76svh,650px)!important}}
+.mes-page[data-ems] #namespace .mes-feature-visual>[hidden]{display:none!important}
+@media(min-width:1100px){.mes-page[data-ems] .mes-features>#uns-agent.ems-feature{grid-template-columns:min(59%,726px) minmax(0,1fr)!important}.mes-page[data-ems] .mes-features>#namespace.ems-feature{grid-template-columns:minmax(0,1fr) min(59%,726px)!important}}
+/* Align the first solution link with the first links in the adjacent footer columns. */
+[data-mes-shell] .framer-ZtfjZ [data-mes-footer]{margin-top:0!important}
