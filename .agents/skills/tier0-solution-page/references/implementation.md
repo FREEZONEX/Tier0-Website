@@ -9,7 +9,7 @@ Workspace: `/Users/shufan/Documents/Codex/2026-11-09/gh-repo-clone-danbenba-fram
 Canonical GitHub source: `tier0-website-github/site/` in `FREEZONEX/Tier0-Website`. Read its `AGENTS.md` and current Git status before synchronization. Published v1.0.1 is a historical checkpoint, not an instruction to redeploy it.
 
 Active test site relative to workspace: `outputs/tier0-cn-migration-20261116/t02801-site/`.
-Preview: `http://localhost:3105/solution/mes`; WMS: `/solution/wms`.
+Preview: `http://localhost:3105/solution/mes`; WMS: `/solution/wms`; EAM trial: `/solution/eam`.
 Server command if needed: `PORT=3105 node outputs/tier0-cn-migration-20261116/t02801-site/serve.js`. Check an existing listener first.
 
 Reference HTML: `subpages/solution_mes.html`, `subpages/solution_wms.html`.
@@ -54,3 +54,7 @@ Never edit `outputs/t02801-site-performance/`, `outputs/t02801-site/` or the pro
 - MES send button `[data-build-preview]` now opens `https://tier0.cn/login` with `_blank`, `noopener,noreferrer`; its legacy attribute name does not mean it should preview locally.
 - WMS native send anchor `a.t0-press[href="https://tier0.cn/login"]` gets `target="_blank"` and `rel="noopener noreferrer"` via shared `navigation-consistency.js`. Preserve this across runtime rerenders. Test only the send action; do not silently change every login CTA.
 - Both MES monitor and energy illustrations use the agent-style outer green gradient with a white app card. Energy type tabs have no outline, black weight-500 text, gray selection. The two comparison bars are static; changing resource type updates both without a second order selector. The energy header shows only its icon and title.
+
+## EAM trial
+
+Current trial files: `subpages/solution_eam.html`, `styles/eam.css`, `scripts/eam.js` in the active test copy. Its own `#eam-page` precedes the native `#main` shell. This does not establish GitHub or production synchronization. Read `interaction-regressions.md` before adapting its grid, cursor or footer integration, and inspect current initialization instead of copying all overrides.

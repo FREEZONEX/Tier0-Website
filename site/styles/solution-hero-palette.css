@@ -1,0 +1,111 @@
+/* Restrained dashboard accents, scoped to MES/WMS/EAM Hero applications. */
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div){--hero-accent:#689b25;--hero-tint:#f4f9ed;background:linear-gradient(155deg,var(--hero-tint),#fff 65%)!important;border-color:#e6e6e6!important}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(2){--hero-accent:#4c7cc5;--hero-tint:#f5f5f5}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(3){--hero-accent:#8b6ab5;--hero-tint:#f6f2fb}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(4){--hero-accent:#b68735;--hero-tint:#fcf7ee}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(5){--hero-accent:#429794;--hero-tint:#eff8f7}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(6){--hero-accent:#7d7d7d;--hero-tint:#f5f5f5}
+.mes-page:not([data-ems]) .mes-hero-app .kpis b,.wh-root .wh-stat>strong,.ea-app .ea-kpis strong{color:var(--hero-accent)!important}
+.wh-root .wh-stat>div>svg{color:var(--hero-accent)!important}
+.mes-page:not([data-ems]) .mes-hero-app .mes-alt-gantt>span:nth-of-type(2){background:#f2f2f2!important;border-color:#e4e4e4!important;color:#456eab}
+.ea-app .ea-table-wrap th,.mes-page:not([data-ems]) .mes-hero-app .mes-rich-table-scroll th{background:#f6f6f6!important}
+/* Visible card surfaces and a clearer metric hierarchy. */
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div){background:var(--hero-tint)!important;border-color:color-mix(in srgb,var(--hero-accent) 22%,white)!important}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(1){--hero-tint:#edf6db}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(2){--hero-tint:#f0f0f0}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(3){--hero-tint:#f1eafa}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(4){--hero-tint:#fcf2df}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(5){--hero-tint:#e5f4f0}
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div):nth-child(6){--hero-tint:#efefef}
+.wh-root .wh-stat>strong,.ea-app .ea-kpis strong,.mes-page:not([data-ems]) .mes-hero-app .kpis b{font-size:29px!important;font-weight:600!important;line-height:1.15!important}
+.wh-root .wh-stat>div:first-child,.ea-app .ea-kpis small,.mes-page:not([data-ems]) .mes-hero-app .kpis small{font-size:11px!important;color:#767676!important}
+.mes-page:not([data-ems]) .mes-hero-app .kpis b em,.ea-app .ea-kpis strong small{font-size:12px!important;font-weight:400!important}
+.wh-root .wh-stat small,.mes-page:not([data-ems]) .mes-hero-app .kpis>div>span{font-size:9px!important;color:#909090!important}
+.wh-root .wh-progress i,.mes-page:not([data-ems]) .mes-hero-app .meter i{background:linear-gradient(90deg,#a7dd36,#55a887)!important}
+.mes-page:not([data-ems]) .mes-alt-gantt>span:first-of-type{background:linear-gradient(90deg,#e4f4bb,#cce98c)!important}
+@media(max-width:650px){.wh-root .wh-stat>strong,.ea-app .ea-kpis strong,.mes-page:not([data-ems]) .mes-hero-app .kpis b{font-size:23px!important}}
+
+/* White card surfaces; color belongs to metrics, icons and charts. */
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div){background:#fff!important;border-color:#e5e5e5!important}
+.mes-page:not([data-ems]) .mes-alt-gantt>span:first-of-type,.mes-page:not([data-ems]) .mes-alt-gantt>span:nth-of-type(2){background:#fff!important}
+/* Metric typography aligned with the EMS Hero StatCard hierarchy. */
+@media(min-width:651px){
+.wh-root .wh-stat>strong,.ea-app .ea-kpis strong,.mes-page:not([data-ems]) .mes-hero-app .kpis b{font-size:34px!important;font-weight:600!important;line-height:1.15!important;margin:12px 0 5px!important;font-variant-numeric:tabular-nums;letter-spacing:-.035em}
+}
+.wh-root .wh-stat>div:first-child,.ea-app .ea-kpis>div>small,.mes-page:not([data-ems]) .mes-hero-app .kpis>div>small{font-size:12px!important;font-weight:400!important;line-height:1.5!important;color:#7a7a7a!important}
+.mes-page:not([data-ems]) .mes-hero-app .kpis b em,.ea-app .ea-kpis strong small{font-size:13px!important;font-weight:400!important;color:#7f7f7f!important;letter-spacing:0}
+.wh-root .wh-stat>small,.mes-page:not([data-ems]) .mes-hero-app .kpis>div>span{font-size:10px!important;line-height:1.5!important;color:#999999!important}
+.wh-root .wh-stat,.ea-app .ea-kpis>div,.mes-page:not([data-ems]) .mes-hero-app .kpis>div{padding:15px!important}
+@media(max-width:650px){.wh-root .wh-stat>strong,.ea-app .ea-kpis strong,.mes-page:not([data-ems]) .mes-hero-app .kpis b{font-size:27px!important}.wh-root .wh-stat,.ea-app .ea-kpis>div,.mes-page:not([data-ems]) .mes-hero-app .kpis>div{padding:11px 9px!important}}
+@media(min-width:651px){.mes-page:not([data-ems]) .mes-hero-app .kpis b{font-size:30px!important}.mes-page:not([data-ems]) .mes-hero-app .kpis>div{padding:13px 10px!important}}
+
+/* Neutral metric text; accent colors are reserved for icons and plotted data. */
+.mes-page:not([data-ems]) .mes-hero-app .kpis b,.wh-root .wh-stat>strong,.ea-app .ea-kpis strong{color:#17212e!important}
+
+.wh-root .wh-stat>div>svg,.mes-page:not([data-ems]) .mes-hero-app .kpis svg,.ea-app .ea-kpis svg{color:#9a9a9a!important;background:transparent!important}
+/* Shared EMS StatCard proportions. Keep card geometry separate from the app scale. */
+:is(.mes-page:not([data-ems]) .mes-hero-app .kpis>div,.wh-root .wh-stat,.ea-app .ea-kpis>div){position:relative;box-sizing:border-box;min-height:116px!important;padding:16px!important;border:1px solid #e5e5e5!important;border-radius:4px!important;background:#fff!important;box-shadow:0 1px 3px #15273b05!important;text-align:left}
+.wh-root .wh-stat>div:first-child,.ea-app .ea-kpis>div>small,.mes-page:not([data-ems]) .mes-hero-app .kpis>div>small{display:block!important;padding-right:28px!important;margin:0!important;font-size:12px!important;line-height:1.5!important;font-weight:400!important;color:#7a7a7a!important}
+.wh-root .wh-stat>strong,.ea-app .ea-kpis strong,.mes-page:not([data-ems]) .mes-hero-app .kpis b{display:block!important;font-size:34px!important;font-weight:600!important;line-height:1.15!important;margin:12px 0 5px!important;letter-spacing:-.035em;color:#17212e!important;white-space:nowrap}
+.wh-root .wh-stat>div>svg{position:absolute;top:10px;right:10px;width:20px!important;height:20px!important;stroke-width:1.85;color:#9a9a9a!important}
+.ea-app .ea-kpis strong small,.mes-page:not([data-ems]) .mes-hero-app .kpis b em,[data-hero-metric-unit]{font-size:13px!important;line-height:1.4!important;font-weight:400!important;letter-spacing:0;color:#7f7f7f!important;margin-left:5px}
+.mes-page:not([data-ems]) .mes-hero-app .kpis{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}
+.ea-app .ea-kpis>div:after,.mes-page:not([data-ems]) .mes-hero-app .kpis>div:after{content:'';position:absolute;top:10px;right:10px;width:20px;height:20px;background:#9a9a9a;mask:var(--metric-icon,url('/assets/icons/lucide/clipboard-list.svg')) center/contain no-repeat}
+.ea-app .ea-kpis>div:nth-child(1),.mes-page:not([data-ems]) .mes-hero-app .kpis>div:nth-child(1){--metric-icon:url('/assets/icons/lucide/factory.svg')}
+.ea-app .ea-kpis>div:nth-child(2),.mes-page:not([data-ems]) .mes-hero-app .kpis>div:nth-child(2){--metric-icon:url('/assets/icons/lucide/clipboard-check.svg')}
+.ea-app .ea-kpis>div:nth-child(3),.mes-page:not([data-ems]) .mes-hero-app .kpis>div:nth-child(3){--metric-icon:url('/assets/icons/lucide/boxes.svg')}
+@media(max-width:650px){.wh-root .wh-stat>strong,.ea-app .ea-kpis strong,.mes-page:not([data-ems]) .mes-hero-app .kpis b{font-size:27px!important}.mes-page:not([data-ems]) .mes-hero-app .kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ea-app .ea-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+.mes-page:not([data-ems]) #builder .mes-hero-app .kpis>div{padding:16px!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app .kpis b{font-size:34px!important;line-height:1.15!important}
+@media(max-width:650px){.mes-page:not([data-ems]) #builder .mes-hero-app .kpis b{font-size:27px!important}}
+/* MES overview: keep production quantities and active equipment as primary metrics. */
+.mes-page:not([data-ems]) #builder .mes-hero-app .kpis>div:nth-child(n+5){display:none!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app .kpis{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+@media(max-width:650px){.mes-page:not([data-ems]) #builder .mes-hero-app .kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* WMS Hero: four primary metrics, with two columns on phones. */
+.wh-root .wh-stats.wh-six>.wh-stat:nth-child(n+5){display:none!important}
+.wh-root .wh-stats.wh-six{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+@media(max-width:650px){.wh-root .wh-stats.wh-six{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* WMS Hero readability: match the EMS hierarchy beyond the metric cards. */
+.wh-root .wh-content h2{font-size:24px!important;line-height:1.3!important;font-weight:600!important}
+.wh-root .wh-content>p,.wh-root .wh-subtitle{font-size:12px!important;line-height:1.6!important}
+.wh-root .wh-table-wrap th{font-size:12px!important;line-height:1.5!important;color:#848484!important}
+.wh-root .wh-table-wrap td{font-size:13px!important;line-height:1.6!important}
+.wh-root .wh-nav{font-size:12px!important;line-height:1.5!important}
+.wh-root .wh-tabs button,.wh-root .wh-filters select,.wh-root .wh-filters input{font-size:12px!important;line-height:1.5!important}
+.wh-root .wh-stat>small{font-size:11px!important;line-height:1.5!important}
+.wh-root .wh-stat>div:first-child{font-size:12px!important;color:#7a7a7a!important}
+@container(max-width:650px){.wh-root .wh-table-wrap th{font-size:11px!important}.wh-root .wh-table-wrap td{font-size:12px!important}.wh-root .wh-content h2{font-size:22px!important}}
+/* EMS-style neutral navigation rail in sibling Hero previews. */
+.mes-page:not([data-ems]) #builder .mes-hero-app aside,.wh-root .wh-sidebar,.ea-app aside{background:#fafafa!important;border-right:1px solid #e7e7e7!important}
+.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button,.wh-root .wh-nav,.ea-app nav button{height:36px!important;min-height:36px!important;padding:0 8px!important;gap:8px!important;border-radius:4px!important;font-size:14px!important;font-weight:400!important;line-height:1.5!important;color:#696969!important;background:transparent!important;margin:0 0 2px!important}
+.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button.active,.wh-root .wh-nav.wh-selected,.ea-app nav button.active{background:#ededed!important;color:#17212e!important;font-weight:400!important}
+.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button:after,.wh-root .wh-nav:after,.ea-app nav button:after{display:none!important}
+.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button:hover,.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button.ea-demo-hover,.wh-root .wh-nav:hover,.ea-app nav button:hover,.ea-app nav button.ea-demo-hover{background:#f1f1f1!important;color:#17212e!important}
+.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button svg,.wh-root .wh-nav svg,.ea-app nav button .ea-icon{width:16px!important;height:16px!important;flex:none!important;stroke-width:1.85!important}
+.mes-page:not([data-ems]) #builder .mes-nav-label,.wh-root .wh-nav-label,.ea-app aside>small{font-size:11px!important;color:#929292!important;margin-bottom:8px!important;line-height:1.5!important}
+.ea-app nav{gap:0!important}
+.wh-root .wh-brand,.ea-app .ea-brand,.mes-page:not([data-ems]) #builder .mes-app-brand{height:56px!important;min-height:56px!important;gap:10px!important}
+.wh-root .wh-brand b,.ea-app .ea-brand b,.mes-page:not([data-ems]) #builder .mes-app-brand b{font-size:14px!important;font-weight:600!important}
+@media(min-width:1440px){.ea-app:not(.collapsed){grid-template-columns:176px minmax(0,1fr)!important}.wh-root:not(.wh-collapsed) .wh-sidebar{width:176px!important}}
+
+.wh-root .wh-nav i{display:none!important}
+/* Exact EMS shell neutrals. */
+.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button,.wh-root .wh-nav,.ea-app nav button{color:#050b14!important}
+.mes-page:not([data-ems]) #builder .mes-hero-sidebar-nav>button.active,.wh-root .wh-nav.wh-selected,.ea-app nav button.active{color:#050b14!important;background:#f4f4f4!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app aside,.wh-root .wh-sidebar,.ea-app aside{background:oklch(.985 0 0)!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app,.mes-page:not([data-ems]) #builder .mes-hero-app .dashboard-main,.wh-root,.wh-root .wh-main,.wh-root .wh-content,.ea-app,.ea-app .ea-app-main,.ea-app .ea-app-content{background:oklch(.993996 .0000298791 0)!important;color:#050b14!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app h3,.wh-root h2,.ea-app .ea-app-content h2{color:#050b14!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app .mes-hero-subtitle,.ea-app .ea-app-content>p,.wh-root .wh-subtitle{color:#666666!important}
+/* Remove the redundant app topbar; keep the page title in the content area. */
+.mes-page:not([data-ems]) #builder .mes-hero-app>.demo-toolbar,.wh-root .wh-topbar,.ea-app .ea-app-top{display:none!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app{grid-template-rows:0 minmax(0,1fr)!important}
+
+/* Collapse must override the fixed virtual desktop canvas sidebar widths. */
+@media(min-width:651px){
+.mes-page:not([data-ems]) #builder .mes-hero-app.mes-sidebar-collapsed{grid-template-columns:64px minmax(0,1fr)!important}
+.mes-page:not([data-ems]) #builder .mes-hero-app.mes-sidebar-collapsed aside{width:64px!important;min-width:0!important;box-sizing:border-box}
+.mes-page:not([data-ems]) #builder .mes-sidebar-collapsed .mes-app-brand{width:100%;justify-content:center;gap:0!important}
+.mes-page:not([data-ems]) #builder .mes-sidebar-collapsed .mes-sidebar-collapse{margin:0 auto!important;width:28px!important;height:28px!important}
+.mes-page:not([data-ems]) #builder .mes-sidebar-collapsed .mes-hero-sidebar-nav>button{justify-content:center!important;padding:0!important}
+}
