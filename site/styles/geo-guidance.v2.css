@@ -1,0 +1,117 @@
+.tier0-geo-banner {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px 12px;
+  padding: 6px 16px;
+  background: #bfdbfe;
+  color: #17233c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tier0-geo-pinned {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+[data-tier0-geo-offset] {
+  top: var(--tier0-geo-banner-height) !important;
+}
+
+.tier0-geo-banner p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  line-height: 24px;
+}
+
+.tier0-geo-banner svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: #2563eb;
+}
+
+.tier0-geo-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 100%;
+  margin-inline-start: auto;
+}
+
+.tier0-geo-actions :is(button, a) {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 4px;
+  color: #1d4ed8;
+  background: #fff;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tier0-geo-actions a {
+  color: #fff;
+  background: #2563eb;
+}
+
+.tier0-geo-actions a:hover {
+  background: #1d4ed8;
+}
+
+.tier0-geo-actions :is(button, a):focus-visible {
+  outline: 2px solid #17233c;
+  outline-offset: 2px;
+}
+
+.tier0-geo-actions .tier0-geo-close {
+  position: relative;
+  padding: 0;
+  background: transparent;
+}
+
+.tier0-geo-actions button:hover {
+  background: #eff6ff;
+}
+
+.tier0-geo-close::before,
+.tier0-geo-close::after {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 1.5px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+.tier0-geo-close::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+  .tier0-geo-banner {
+    flex-wrap: wrap;
+  }
+
+  .tier0-geo-banner p {
+    flex-basis: 100%;
+  }
+}

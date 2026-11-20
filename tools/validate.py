@@ -7,7 +7,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
-GEO_SCRIPT = 'geo-guidance.v1.js'
+GEO_SCRIPT = 'geo-guidance.v2.js'
 
 def validate():
     manifest = json.loads((SITE / 'page-manifest.json').read_text(encoding='utf-8'))

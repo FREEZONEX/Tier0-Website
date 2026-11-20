@@ -24,12 +24,12 @@
 .sc-chart-modes{display:flex;gap:4px;margin-left:auto}.sc-chart-modes button{font:400 11px/1.4 'IBM Plex Sans SC',sans-serif;padding:4px 8px;border:0;border-radius:3px;background:transparent;color:#737373}.sc-chart-modes button[aria-pressed=true]{background:#eee;color:#171717}
 #trend.sc-bars>polyline{opacity:0}#trend .sc-process-bar{fill:#b2ed1d;opacity:.65;cursor:pointer}#trend .sc-process-bar:hover{opacity:1}
 .mes-page[data-ems] :is(.ems-route,.tree-info,.canvas-caption,#period-note,.ems-energy-note,.ems-disclosure){display:none!important}
-.mes-page[data-ems] .mes-feature-copy>p[style],.mes-page[data-ems] .ems-sources b{display:none!important}
+.mes-page[data-ems] .ems-sources b{display:none!important}
 
 /* Application-frame trial: only process monitoring and equipment health. */
 .sc-app-shell{display:grid;grid-template-columns:130px minmax(0,1fr);background:#fff;border:1px solid #e5e5e5;border-radius:6px;overflow:hidden;min-width:0}
 .sc-app-nav{background:#fafafa;border-right:1px solid #e5e5e5;padding:16px 8px;display:flex;flex-direction:column;gap:5px}.sc-app-nav>b{font-size:10px;color:#8a8a8a;font-weight:400;margin:0 7px 12px}.sc-app-nav button{display:flex;align-items:center;gap:8px;border:0!important;background:transparent!important;color:#404040!important;font:400 12px/1.5 'IBM Plex Sans SC',sans-serif;padding:8px!important;text-align:left;border-radius:4px}.sc-app-nav button[aria-pressed=true]{background:#eee!important;color:#171717!important}.sc-app-nav img{width:16px;height:16px}.sc-app-body{min-width:0}.sc-app-body>.ea-panel,.sc-app-body>.mes-monitor{border:0!important;border-radius:0!important;margin:0!important}.sc-app-body>[hidden]{display:none!important}.sc-app-records{padding:20px;min-height:400px;color:#171717}.sc-app-records h3{font-size:17px;margin:0 0 20px}.sc-app-records table{width:100%;border-collapse:collapse;font-size:12px}.sc-app-records :is(th,td){text-align:left;padding:12px 7px;border-bottom:1px solid #eee}.sc-app-records th{background:#f5f5f5;color:#737373;font-weight:400}.sc-app-records dl{display:grid;grid-template-columns:1fr 1.6fr;font-size:13px;gap:18px}.sc-app-records dt{color:#8a8a8a}.sc-app-records dd{margin:0}
-#process #trend>polyline{stroke:#5181d7!important}#process #trend circle[data-process-point]{stroke:#5181d7!important}#process #trend circle[r="7"]{fill:#f2b554!important;stroke:#da9c37!important}#process #trend .sc-process-bar{fill:#5181d7!important}#process #trend>rect:not(.sc-process-bar){fill:#edf6dd!important}
+#process #trend>polyline{stroke:#5181d7!important}#process #trend circle[data-process-point]{stroke:#5181d7!important}#process #trend circle[r="7"]{fill:#f2b554!important;stroke:#da9c37!important}#process #trend .sc-process-bar{fill:#4b7bec!important;opacity:1}#process #trend .sc-process-bar:hover{fill:#3567d8!important}#process #trend>rect:not(.sc-process-bar){fill:#edf6dd!important}
 #eam-health #ea-trend>polyline{stroke:#5181d7!important}#eam-health .ea-chart-dot{stroke:#5181d7!important}#eam-health #ea-trend-active{fill:#f2b554!important;stroke:#da9c37!important}#eam-health #ea-fill stop{stop-color:#5181d7!important}#eam-health #ea-trend-guide{stroke:#5181d7!important}
 #eam-agent .ea-analysis{gap:10px!important}#eam-agent .ea-analysis h4{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px!important;margin:0!important;font-size:12px}#eam-agent .ea-analysis h4 [data-save]{font-size:11px!important;padding:5px 8px!important;background:#fff!important;border:1px solid #ddd!important;color:#404040!important;white-space:nowrap}#eam-agent .ea-analysis .ea-result{padding:12px!important}#eam-agent .ea-analysis .ea-result>strong{font-size:30px!important;line-height:1.2!important}#eam-agent .ea-analysis .ea-result>p{margin:6px 0!important;font-size:11px!important}#eam-agent .ea-mini-trend svg{height:80px!important}#eam-agent .ea-mini-trend details{margin-top:6px!important}#eam-agent #ea-ask{min-height:78px!important;align-items:flex-end!important;padding:10px!important;box-sizing:border-box}#eam-agent #ea-ask input{min-height:54px!important;font-size:14px!important;align-self:stretch}
 @media(max-width:1199px){.sc-app-shell{grid-template-columns:48px minmax(0,1fr)}.sc-app-nav{padding:12px 5px}.sc-app-nav>b,.sc-app-nav button span{display:none}.sc-app-nav button{justify-content:center;padding:10px!important}.sc-app-records{padding:14px}}
@@ -120,3 +120,19 @@
 #eam-health .sc-record-icon img{width:20px;height:20px}
 #eam-health .sc-record-title strong{grid-column:2;grid-row:2}
 #eam-health .sc-record-title .sc-status{grid-column:3;grid-row:2;margin-left:0}
+
+/* Section copy and interactive illustrations share the same top edge. */
+.mes-page .mes-features>.mes-stack-card{align-items:start!important}
+.mes-page .mes-stack-card>.mes-feature-copy,.mes-page .mes-stack-card>.mes-feature-visual,.ea-split>.ea-copy,.ea-split>.ea-visual{align-self:start!important}
+.mes-page[data-ems] #uns-agent .mes-feature-copy>p{display:block!important}
+
+/* Keep parameter selection with the title; chart mode is the trailing action. */
+.mes-page #process .mes-monitor-head{display:flex;flex-wrap:wrap;justify-content:flex-start}
+.mes-page #process .mes-monitor-head>strong{flex:0 0 auto}
+.mes-page #process .mes-monitor-head>#parameter{margin-left:6px!important;margin-right:0!important;flex:0 0 auto;width:108px;font-size:12px}
+.mes-page #process .mes-monitor-head>small{display:none!important}
+.mes-page #process .mes-monitor-head>.sc-chart-modes{margin-left:auto;flex:0 0 auto}
+.mes-page #scheduling .evidence-tabs button,.mes-page #scheduling .evidence-tabs button span{font-size:14px!important;line-height:20px!important}
+.mes-page #scheduling .evidence-tabs button{padding:10px 12px!important;gap:7px}
+.mes-page #scheduling .evidence-tabs button svg{width:16px;height:16px;flex:none}
+@media(max-width:600px){.mes-page #process .mes-monitor-head{gap:8px;padding:12px}.mes-page #process .mes-monitor-head>#parameter{width:100px;margin-left:0!important}.mes-page #process .mes-monitor-head>.sc-chart-modes{justify-content:flex-end}.mes-page #scheduling .evidence-tabs button{padding:9px 8px!important;gap:5px}}
