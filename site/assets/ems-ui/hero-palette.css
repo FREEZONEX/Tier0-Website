@@ -1,0 +1,27 @@
+/* Hero-only palette trial: brand green plus restrained analytical accents. */
+.ems-workbench>.stats>div:nth-child(1){--metric-accent:#659519;background:linear-gradient(135deg,#f3fae8,white 78%);border-color:#dce8c9}
+.ems-workbench>.stats>div:nth-child(2){--metric-accent:#4d78c3;background:linear-gradient(135deg,#f3f3f3,white 78%);border-color:#e4e4e4}
+.ems-workbench>.stats>div:nth-child(3){--metric-accent:#8a65bb;background:linear-gradient(135deg,#f5f0fc,white 78%);border-color:#e6ddf1}
+.ems-workbench>.stats>div{box-shadow:0 1px 3px #15273b05}
+.ems-workbench>.stats>div .tabular-nums{color:var(--metric-accent)}
+.ems-workbench>.stats>div svg{color:var(--metric-accent);background:color-mix(in srgb,var(--metric-accent) 10%,white);border-radius:4px;box-sizing:content-box;padding:4px}
+.ems-workbench .chart-panel>header{background:#fafafa;border-color:#ececec}
+.ems-workbench .ems-analysis-grid>.panel.detail{background:linear-gradient(145deg,#fff7e9,#fffdf8 85%);border-color:#efdfc3}
+.ems-workbench .ems-analysis-grid>.panel.detail h3{color:#986b26}
+.ems-workbench .ems-analysis-grid>.panel.detail p{color:#5b5b5b}
+.ems-workbench>.stats>div{background:var(--hero-tint)!important;border-color:color-mix(in srgb,var(--metric-accent) 22%,white)!important}
+.ems-workbench>.stats>div:nth-child(1){--hero-tint:#edf6db}.ems-workbench>.stats>div:nth-child(2){--hero-tint:#f0f0f0}.ems-workbench>.stats>div:nth-child(3){--hero-tint:#f1eafa}
+.ems-workbench>.stats .tabular-nums{font-size:34px!important;font-weight:600!important;line-height:1.15!important}
+.ems-workbench>.stats .tabular-nums>span{font-size:inherit!important}
+.ems-workbench>.stats .caption{font-size:12px!important;color:#767676}
+.ems-workbench h2{font-size:24px!important}.ems-workbench .panel h3,.ems-workbench .panel header{font-size:15px!important}
+.ems-workbench .chart-panel svg rect[fill="#96c737"]{fill:#8cbd35}.ems-workbench .chart-panel svg [stroke="#5181d7"]{stroke:#4e82d4;stroke-width:2.5px}
+@media(max-width:650px){.ems-workbench>.stats .tabular-nums{font-size:27px!important}}
+
+.ems-workbench>.stats>div,.ems-workbench .chart-panel>header,.ems-workbench .ems-analysis-grid>.panel.detail{background:#fff!important;border-color:#e5e5e5!important}
+
+.ems-workbench>.stats .tabular-nums,.ems-workbench>.stats .tabular-nums>span{color:#17212e!important}.ems-workbench .ems-analysis-grid>.panel.detail h3{color:#17212e!important}
+
+.ems-workbench>.stats>div svg{color:#9a9a9a!important;background:transparent!important;padding:0!important;box-sizing:border-box}
+
+.ems-workbench>.stats .tabular-nums>span.ml-1\.5{font-size:13px!important;font-weight:400!important;color:#7f7f7f!important}

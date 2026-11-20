@@ -66,18 +66,24 @@ const fitNamespace=()=>namespace.style.setProperty('--ems-namespace-top',Math.mi
 new ResizeObserver(fitNamespace).observe(namespace);
 addEventListener('resize',fitNamespace);fitNamespace();
 const cards = [...emsPage.querySelectorAll('.mes-stack-card')];
+let depthFrame=0;const depthState=new WeakMap();
 function coverDepth(){
-  const active=innerWidth>=1200 && !matchMedia('(prefers-reduced-motion: reduce)').matches;
-  cards.forEach((card,i)=>{
-    const next=cards[i+1];
-    const depth=active && next ? Math.max(0,Math.min(1,(400-next.getBoundingClientRect().top)/320)):0;
-    card.style.setProperty('--mes-depth-opacity',1-depth*.78);
-    card.style.setProperty('--mes-depth-blur',depth*4+'px');
-    card.classList.toggle('mes-stack-retired',!!next && active && cards.at(-1).getBoundingClientRect().top<=80.5);
-  });
+ depthFrame=0;
+ const active=innerWidth>=1200&&!matchMedia('(prefers-reduced-motion: reduce)').matches;
+ // Read geometry once before changing styles; iframe surfaces make read/write interleaving costly.
+ const tops=active?cards.map(card=>card.getBoundingClientRect().top):[];
+ const retire=active&&tops.at(-1)<=80.5;
+ cards.forEach((card,i)=>{
+  const depth=active&&i<cards.length-1?Math.max(0,Math.min(1,(400-tops[i+1])/320)):0;
+  const value=Math.round(depth*1000)/1000,retired=!!cards[i+1]&&retire;
+  const old=depthState.get(card);
+  if(!old||old.depth!==value){card.style.setProperty('--mes-depth-opacity',String(1-value*.78));card.style.setProperty('--mes-depth-blur',value*4+'px');card.classList.toggle('ems-depth-active',value>0&&value<1)}
+  if(!old||old.retired!==retired)card.classList.toggle('mes-stack-retired',retired);
+  depthState.set(card,{depth:value,retired});
+ });
 }
-addEventListener('scroll',coverDepth,{passive:true});
-addEventListener('resize',coverDepth);
+function scheduleDepth(){if(!depthFrame)depthFrame=requestAnimationFrame(coverDepth)}
+addEventListener('scroll',scheduleDepth,{passive:true});addEventListener('resize',scheduleDepth);
 coverDepth();
 
 }
