@@ -883,7 +883,7 @@ function PriceView({
       /* @__PURE__ */ React.createElement(TagIcon, null),
       p.tag
     )
-  ), !p.tag && /* @__PURE__ */ React.createElement(
+  ), p.note && !p.tag && /* @__PURE__ */ React.createElement(
     "div",
     {
       key: p.noteKey || String(p.note),
@@ -1053,23 +1053,18 @@ function Tier0PricingTable(props) {
     ))
   );
   const price = (id) => {
-    if (id === "trial") return { big: t(T.free), note: t(T.trialNote) };
-    if (id === "scale") return { big: t(T.custom), note: t(T.scaleNote) };
-    const [promo, reg, year] = P[id];
-    const pct = (now, was) => String(Math.round((1 - now / was) * 100));
+    if (id === "trial") return { big: t(T.free), unit: t(T.trialNote), note: "" };
+    if (id === "scale") return { big: t(T.custom), note: "" };
+    const [, reg] = P[id];
     return cycle === "monthly" ? {
-      // 月付默认展示常规价；首次订阅前 3 个月优惠价放在标签里
       big: money(reg, P.s),
       num: reg,
       unit: t(T.mo),
-      tag: fill(t(T.intro), { v: money(promo, P.s) }),
       note: ""
     } : {
-      big: money(year, P.s),
-      num: year,
-      was: reg * 12,
+      big: money(reg * 12, P.s),
+      num: reg * 12,
       unit: t(T.yr),
-      tag: fill(t(T.yearOff), { v: pct(year, reg * 12) }),
       note: ""
     };
   };
@@ -1977,8 +1972,9 @@ function Tier0PricingTable(props) {
           {
             style: {
               padding: "10px 14px",
-              background: head.bg,
-              borderLeft: `2px solid ${tone === "saas" ? C.lime : tone === "priv" ? C.text : C.mute}`,
+              background: C.soft,
+              border: `1px solid ${C.line}`,
+              borderRadius: 4,
               fontFamily: MONO,
               fontSize: 12,
               lineHeight: 1.7,
@@ -2009,26 +2005,11 @@ function Tier0PricingTable(props) {
         position: "relative",
         border: `1px solid ${C.line}`,
         borderRadius: 4,
+        overflow: "hidden",
         display: "grid",
         gridTemplateColumns: ovCols ? "repeat(3, minmax(0, 1fr))" : "1fr"
       }
     },
-    ["tl", "tr", "bl", "br"].map((c) => /* @__PURE__ */ React.createElement(
-      "span",
-      {
-        key: c,
-        style: {
-          position: "absolute",
-          width: 6,
-          height: 6,
-          background: C.lime,
-          top: c[0] === "t" ? -3 : void 0,
-          bottom: c[0] === "b" ? -3 : void 0,
-          left: c[1] === "l" ? -3 : void 0,
-          right: c[1] === "r" ? -3 : void 0
-        }
-      }
-    )),
     OvCol(
       t(T.ovOpen),
       "open",
@@ -2203,20 +2184,7 @@ function Tier0PricingTable(props) {
           ["monthly", t(T.monthly)],
           [
             "yearly",
-            /* @__PURE__ */ React.createElement(React.Fragment, null, t(T.yearly), /* @__PURE__ */ React.createElement(
-              "span",
-              {
-                style: {
-                  fontFamily: MONO,
-                  fontSize: 11,
-                  color: C.greenDeep,
-                  background: C.limeSoft,
-                  padding: "1px 5px",
-                  borderRadius: 3
-                }
-              },
-              t(T.save)
-            ))
+            t(T.yearly)
           ]
         ])
       )
