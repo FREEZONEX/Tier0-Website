@@ -1,5 +1,5 @@
 {
-  "pages": 48,
+  "pages": 49,
   "sitemapPages": 39,
   "missingSitemapPages": [],
   "entries": [
@@ -194,6 +194,10 @@
     {
       "url": "https://t02801.framer.website/solution/ems",
       "file": "subpages/solution_ems.html"
+    },
+    {
+      "url": "https://t02801.framer.website/partner",
+      "file": "subpages/partner.html"
     }
   ]
 }
