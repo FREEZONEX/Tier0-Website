@@ -411,7 +411,7 @@ function $() {
         },
         OYGu2SDQ6: {
           elements: { hhcnXrc4e: `plan`, Jv0lFmBNF: `talk-to--expert` },
-          page: x(() => import("./_jgnQmF2SLIRazi-nsRfyY0b3W36kUSTp7fRIujzSRc.DNM-9mqO.mjs?v=20261116-migration-v2")),
+          page: x(() => import("./_jgnQmF2SLIRazi-nsRfyY0b3W36kUSTp7fRIujzSRc.DNM-9mqO.mjs?v=20261126-pricing-header")),
           path: `/pricing`,
         },
         CtRSYVoCz: {

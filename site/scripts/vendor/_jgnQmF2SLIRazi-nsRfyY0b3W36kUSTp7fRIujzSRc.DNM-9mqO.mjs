@@ -1,4 +1,4 @@
-import UpdatedPricingTable from "./Tier0PricingTable.zh.mjs?v=20261116-migration-v2";
+import UpdatedPricingTable from "./Tier0PricingTable.zh.mjs?v=20261126-pricing-header";
 import { t as e } from "./rolldown-runtime.Bi-D_2cA.mjs?v=20261116-migration-v2";
 import {
   D as t,
